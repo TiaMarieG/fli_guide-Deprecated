@@ -23,6 +23,62 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/alchemist-guide', (req, res) => {
+    res.render('life_guides/alchemist-guide');
+})
+
+app.get('/angler-guide', (req, res) => {
+    res.render('life_guides/angler-guide');
+})
+
+app.get('/artist-guide', (req, res) => {
+    res.render('life_guides/artist-guide');
+})
+
+app.get('/blacksmith-guide', (req, res) => {
+    res.render('life_guides/blacksmith-guide');
+})
+
+app.get('/carpenter-guide', (req, res) => {
+    res.render('life_guides/carpenter-guide');
+})
+
+app.get('/cook-guide', (req, res) => {
+    res.render('life_guides/cook-guide');
+})
+
+app.get('/farmer-guide', (req, res) => {
+    res.render('life_guides/farmer-guide');
+})
+
+app.get('/hunter-guide', (req, res) => {
+    res.render('life_guides/hunter-guide');
+})
+
+app.get('/magician-guide', (req, res) => {
+    res.render('life_guides/magician-guide');
+})
+
+app.get('/mercenary-guide', (req, res) => {
+    res.render('life_guides/mercenary-guide');
+})
+
+app.get('/miner-guide', (req, res) => {
+    res.render('life_guides/miner-guide');
+})
+
+app.get('/paladin-guide', (req, res) => {
+    res.render('life_guides/paladin-guide');
+})
+
+app.get('/tailor-guide', (req, res) => {
+    res.render('life_guides/tailor-guide');
+})
+
+app.get('/woodcutter-guide', (req, res) => {
+    res.render('life_guides/woodcutter-guide');
+})
+
 // Define a "confirm" route, using the POST method
 app.post('/confirm', (req, res) => {
     // Get the data from the form that was submitted
