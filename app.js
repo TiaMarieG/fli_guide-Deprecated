@@ -17,7 +17,6 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // Define a "default" route, 
-// e.g. jshmo.greenriverdev.com/reservation-app/
 app.get('/', (req, res) => {
 
     // Return home page
