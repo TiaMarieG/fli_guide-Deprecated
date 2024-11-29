@@ -23,6 +23,13 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+// Define a "default" route, 
+app.get('/new-home', (req, res) => {
+
+    // Return home page
+    res.render('new-home-test');
+});
+
 app.get('/alchemist-guide', (req, res) => {
     res.render('life_guides/alchemist-guide');
 })
