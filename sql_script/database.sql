@@ -1,7 +1,8 @@
 CREATE DATABASE fli_guide;
 
-CREATE TABLE crafting (
+CREATE TABLE alchemy_crafting (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    item_name VARCHAR(255),
     main_resource VARCHAR(255),
     main_num INT,
     sec_resource VARCHAR(255),
