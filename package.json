@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "mariadb": "^3.4.0"
   },
   "name": "fli-guide",
   "version": "1.0.0",
