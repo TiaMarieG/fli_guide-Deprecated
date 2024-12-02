@@ -1,6 +1,8 @@
 // Get the express package 
 const e = require('express');
 const express = require('express');
+const mariadb = require('mariadb');
+
 
 // Instantiate an express (web) app
 const app = express();
@@ -12,7 +14,7 @@ const PORT = 3000;
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: '611795',
     database: 'fli_guide'
 });
 
