@@ -148,11 +148,11 @@ main {
 
 /* Form Styles */
 
-#bs_missing_recipe {
+.missing_recipe {
     display: grid;
 }
 
-#bs_missing_recipe input {
+.missing_recipe input {
     width: 50%;
 }
 
