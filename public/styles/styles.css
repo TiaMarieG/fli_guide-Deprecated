@@ -146,6 +146,16 @@ main {
     padding-right: .25rem;
 }
 
+/* Form Styles */
+
+#bs_missing_recipe {
+    display: grid;
+}
+
+#bs_missing_recipe input {
+    width: 50%;
+}
+
 /* Link Styles */
 
 a:link {

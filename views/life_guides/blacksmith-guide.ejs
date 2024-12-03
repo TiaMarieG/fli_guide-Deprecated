@@ -33,9 +33,56 @@
             <p>
                 When the player chooses the Blacksmith life, they learn 4 skills: Smithing, Weaponsmithing, Armoursmithing, and Metal Tool Smithing. The max skill level is 15 (20 with the DLC). To unlock the new cap, you must reach Legend rank and talk to Divinus with the Blacksmith Life activated. He will increase the cap of all 4 skills to 20 and upgrade the licence to God-in-Training rank.
             </p>
+
+            <fieldset class="craft-selection">
+                <legend>Blacksmith Recipes</legend>
+                <select id="bs_recipe" name="bs_recipe">
+                    <option value='none'>-- Select a Recipe --</option>
+                    <option value='sword'>Sword</option>
+                    <option value='gloves'>Gloves</option>
+                    <option value='helmet'>Helmet</option>
+                    <option value='pants'>Pants</option>
+                </select>
+
+
+                <button type="submit" class="main-button">Get Recipe</button>
+            </fieldset>
+
+
+            <h2>Missing Recipe</h2>
+
+            <p>
+                Data for the game is collected at the pace of whenever I'm able to play (which isn't often). If you see a recipe that isn't included in the option above, feel free to submit it for review! I'll take a look and add it to the database once it's determined that it's valid.
+            </p>
+
+            <fieldset id="bs_missing_recipe">
+                <legend>Blacksmithing Recipe</legend>
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" id="recipe_name" name="recipe_name" placeholder="Enter recipe name">
+
+                <label for="main_resource">Main Resource:</label>
+                <input type="text" id="main_resource" name="main_resource" placeholder="Enter main resource">
+
+                <label for="main_quantity">Main Quantity:</label>
+                <input type="text" id="main_quantity" name="main_quantity" placeholder="Enter main resource quantity">
+
+                <label for="sec_resource">Secondary Resource:</label>
+                <input type="text" id="sec_resource" name="sec_resource" placeholder="Enter secondary resource">
+
+                <label for="sec_quantity">Secondary Quantity:</label>
+                <input type="text" id="sec_quantity" name="sec_quantity" placeholder="Enter secondary resource quantity">
+
+                <label for="opt_reagent">Optional Reagent:</label>
+                <input type="text" id="opt_reagent" name="opt_reagent" placeholder="Enter optional reagent">
+
+                <label for="opt_quantity">Optional Reagent Quantity:</label>
+                <input type="text" id="opt_quantity" name="opt_quantity" placeholder="Enter optional reagent quantity">
+
+                <br>
+
+                <button type="submit" class="main-button">Submit Recipe</button>
+            </fieldset>
         </main>
-
-
 
         <aside>
             <h3>Official Sites</h3>
@@ -47,7 +94,7 @@
                             target="_blank">Nintendo Shop</a></li>
                 </ul>
             </nav>
-
+    
             <h3>Community Sites</h3>
             <nav class="main-nav">
                 <ul>
@@ -58,12 +105,12 @@
                     <li><a href="https://www.reddit.com/r/fantasylife/" target="_blank">Reddit</a></li>
                 </ul>
             </nav>
-
+    
             <h3>Additional Resources</h3>
             <nav>
-
+    
             </nav>
-
+    
             <h3>Dev Corner</h3>
             <nav class="main-nav">
                 <ul>
@@ -73,7 +120,7 @@
                     <li><a href="https://ko-fi.com/mittoa_gaming" target="_blank">Support FLi Guide</a>
                     </li>
                 </ul>
-
+    
             </nav>
         </aside>
     </div>
