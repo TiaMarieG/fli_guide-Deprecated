@@ -16,7 +16,7 @@ Fantasy Life i is not set to release until April 2025, so much of the data that'
 
 **Tia Marie Gordon**
 
-CSS - Many of the images were pulled from the Fli Home website. The color scheme is intended to match the theme of Fli. Each 'life' icon was snipped from the main page and the background removed so that it could be used as part of the links on the main page.
+CSS - Many of the images were pulled from the Fli Home website. The color scheme is intended to match the theme of Fli. Each 'life' icon was snipped from the main page and the background removed so that it could be used as part of the links on the main page. The basic layout was inspired by several different guides that I personally use during my own gaming sessions. The overall point is that the information should be quickly accessible and get straight to the point. A gamer doesn't want to waste time trying to read every little detail to find the information they are looking for.
 
 Life Skills - I opted to work on the Blacksmith, Carpenter, and Cook lives. The data for each life was pulled from the Fantasy Life Wiki page. The 'recipes' that can be selected were made up and don't actually exist in-game, but they match the theme of the chosen life.
 
