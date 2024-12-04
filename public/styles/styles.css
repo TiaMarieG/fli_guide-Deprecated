@@ -156,6 +156,10 @@ main {
     width: 50%;
 }
 
+#listed-submission p {
+    padding-left: 1.5rem;
+}
+
 /* Link Styles */
 
 a:link {
