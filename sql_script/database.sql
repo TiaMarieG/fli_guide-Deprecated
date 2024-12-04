@@ -27,8 +27,6 @@ CREATE TABLE missing_recipes (
 INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
 VALUES ("blacksmithing","iron sword", "iron ingot", 5, "leather", 2, "reflux", 1);
 
-SELECT * FROM crafting_recipes;
-
 INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
 VALUES ("blacksmithing", "iron gloves", "iron ingot", 2, "leather", 4, "reflux", 1);
 
