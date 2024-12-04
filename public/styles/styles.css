@@ -206,6 +206,8 @@ aside {
 
     border: solid 3px #948163;
     border-radius: .5rem;
+
+    height: fit-content;
 }
 
 h3 {
