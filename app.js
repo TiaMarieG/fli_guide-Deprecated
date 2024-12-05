@@ -1,5 +1,4 @@
 // Get the express package 
-const e = require('express');
 const express = require('express');
 const mariadb = require('mariadb');
 
@@ -14,7 +13,7 @@ const PORT = 3000;
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: '611795',
+    password: 'Izzaia8192',
     database: 'fli_guide'
 });
 
@@ -114,10 +113,12 @@ app.post('/submitted-recipes', async (req, res) => {
     const conn = await connect();
     const data = req.body;
 
-    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("blacksmithing","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity});`);
+    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("blacksmithing","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity})`);
+
+     const results = await conn.query ('SELECT * FROM missing_recipes');
 
     // Display the confirm page, pass the data
-    res.render('submitted-recipes', { details: data });
+    res.render('submitted-recipes', { details: data, submissions : results });
 });
 
 // Tell the app to listen for requests on the designated port

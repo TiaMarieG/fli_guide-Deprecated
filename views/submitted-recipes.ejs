@@ -30,6 +30,34 @@
 
         <div>
             <h2>Interested in seeing what other recipes were submitted?</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Life Skill</th>
+                        <th>Recipe Name</th>
+                        <th>Main Resource</th>
+                        <th>Quantity</th>
+                        <th>Secondary Resource</th>
+                        <th>Quantity</th>
+                        <th>Optional Reagent</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% submissions.forEach(submissions => { %>
+                        <tr>
+                            <td><%= %></td>
+                            <td><%= submissions.item_name %></td>
+                            <td><%= submissions.main_resource %></td>
+                            <td><%= submissions.main_num %></td>
+                            <td><%= submissions.sec_resource %></td>
+                            <td><%= submissions.sec_num %></td>
+                            <td><%= submissions.opt_reagent %></td>
+                            <td><%= submissions.opt_num %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
 
         </div>
 
