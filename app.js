@@ -69,6 +69,7 @@ app.get('/blacksmith-guide', (req, res) => {
 });
 
 app.get('/carpenter-guide', (req, res) => {
+    life = "carpenter";
     res.render('life_guides/carpenter-guide');
 });
 
