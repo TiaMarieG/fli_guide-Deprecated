@@ -19,22 +19,26 @@
 
         <main>
             <h2>Gameplay</h2>
-            
+
 
             <p>
-                The Alchemist is a Life you can choose in the game Fantasy Life. It is one of 12 Lives that can be 
+                The Alchemist is a Life you can choose in the game Fantasy Life. It is one of 12 Lives that can be
                 chosen at any time during the game by visiting the Guild Master (except during a story mission).
 
-                The Alchemist uses flasks to make medicine, bombs, flasks and accessories. There are 67 alchemist recipes in the 
+                The Alchemist uses flasks to make medicine, bombs, flasks and accessories. There are 67 alchemist
+                recipes in the
                 base game and 90 with the DLC.
             </p>
 
             <h2>Skills</h2>
 
             <p>
-                When the player chooses the Alchemist life, they learn 3 skills: Alchemy, Compound Alchemy, and Accessory Alchemy. 
-                The max skill level is 15 (20 with the DLC). To unlock the new cap, you must reach Legend rank and talk to Divinus 
-                with the Alchemist Life activated. He will increase the cap of all 3 skills to 20 and upgrade the licence to 
+                When the player chooses the Alchemist life, they learn 3 skills: Alchemy, Compound Alchemy, and
+                Accessory Alchemy.
+                The max skill level is 15 (20 with the DLC). To unlock the new cap, you must reach Legend rank and talk
+                to Divinus
+                with the Alchemist Life activated. He will increase the cap of all 3 skills to 20 and upgrade the
+                licence to
                 God-in-Training rank.
             </p>
 
@@ -56,36 +60,44 @@
             <h2>Missing Recipe</h2>
 
             <p>
-                Data for the game is collected at the pace of whenever I'm able to play (which isn't often). If you see a recipe that isn't included in the option above, feel free to submit it for review! I'll take a look and add it to the database once it's determined that it's valid.
+                Data for the game is collected at the pace of whenever I'm able to play (which isn't often). If you see
+                a recipe that isn't included in the option above, feel free to submit it for review! I'll take a look
+                and add it to the database once it's determined that it's valid.
             </p>
 
-            <fieldset class="missing_recipe">
-                <legend>Alchemist Recipe</legend>
-                <label for="recipe_name">Recipe Name:</label>
-                <input type="text" id="recipe_name" name="recipe_name" placeholder="Enter recipe name">
+            <form method="post" action="submitted-recipes">
 
-                <label for="main_resource">Main Resource:</label>
-                <input type="text" id="main_resource" name="main_resource" placeholder="Enter main resource">
+                <fieldset class="missing_recipe">
+                    <legend>Alchemy Recipe</legend>
+                    <label for="recipe_name">Recipe Name:</label>
+                    <input type="text" id="recipe_name" name="recipe_name" placeholder="Enter recipe name">
 
-                <label for="main_quantity">Main Quantity:</label>
-                <input type="text" id="main_quantity" name="main_quantity" placeholder="Enter main resource quantity">
+                    <label for="main_resource">Main Resource:</label>
+                    <input type="text" id="main_resource" name="main_resource" placeholder="Enter main resource">
 
-                <label for="sec_resource">Secondary Resource:</label>
-                <input type="text" id="sec_resource" name="sec_resource" placeholder="Enter secondary resource">
+                    <label for="main_quantity">Main Quantity:</label>
+                    <input type="text" id="main_quantity" name="main_quantity"
+                        placeholder="Enter main resource quantity">
 
-                <label for="sec_quantity">Secondary Quantity:</label>
-                <input type="text" id="sec_quantity" name="sec_quantity" placeholder="Enter secondary resource quantity">
+                    <label for="sec_resource">Secondary Resource:</label>
+                    <input type="text" id="sec_resource" name="sec_resource" placeholder="Enter secondary resource">
 
-                <label for="opt_reagent">Optional Reagent:</label>
-                <input type="text" id="opt_reagent" name="opt_reagent" placeholder="Enter optional reagent">
+                    <label for="sec_quantity">Secondary Quantity:</label>
+                    <input type="text" id="sec_quantity" name="sec_quantity"
+                        placeholder="Enter secondary resource quantity">
 
-                <label for="opt_quantity">Optional Reagent Quantity:</label>
-                <input type="text" id="opt_quantity" name="opt_quantity" placeholder="Enter optional reagent quantity">
+                    <label for="opt_reagent">Optional Reagent:</label>
+                    <input type="text" id="opt_reagent" name="opt_reagent" placeholder="Enter optional reagent">
 
-                <br>
+                    <label for="opt_quantity">Optional Reagent Quantity:</label>
+                    <input type="text" id="opt_quantity" name="opt_quantity"
+                        placeholder="Enter optional reagent quantity">
 
-                <button type="submit" class="main-button">Submit Recipe</button>
-            </fieldset>
+                    <br>
+
+                    <button type="submit" class="main-button">Submit Recipe</button>
+                </fieldset>
+            </form>
         </main>
 
 
@@ -103,7 +115,8 @@
             <h3>Community Sites</h3>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="https://discord.gg/fantasylife-133342059787452416" target="_blank">Community Discord</a></li>
+                    <li><a href="https://discord.gg/fantasylife-133342059787452416" target="_blank">Community
+                            Discord</a></li>
                     <li><a href="https://fantasy-life.fandom.com/wiki/Fantasy_Life_i:_The_Girl_Who_Steals_Time"
                             target="_blank">Fandom Wiki</a></li>
                     <li><a href="https://www.reddit.com/r/fantasylife/" target="_blank">Reddit</a></li>
