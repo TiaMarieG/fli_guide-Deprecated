@@ -1,7 +1,7 @@
 // Get the express package 
 const express = require('express');
 const mariadb = require('mariadb');
-
+let life = "";
 
 // Instantiate an express (web) app
 const app = express();
@@ -64,6 +64,7 @@ app.get('/artist-guide', (req, res) => {
 });
 
 app.get('/blacksmith-guide', (req, res) => {
+    life = "blacksmith";
     res.render('life_guides/blacksmith-guide');
 });
 
@@ -113,7 +114,7 @@ app.post('/submitted-recipes', async (req, res) => {
     const conn = await connect();
     const data = req.body;
 
-    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("blacksmithing","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity})`);
+    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("${life}","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity})`);
 
      const results = await conn.query ('SELECT * FROM missing_recipes');
 
