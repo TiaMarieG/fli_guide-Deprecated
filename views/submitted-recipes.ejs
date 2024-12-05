@@ -18,7 +18,6 @@
 
         <div id="listed-submission">
             <h2>Here is the recipe for that you submitted for review: </h2>
-            <p>Life Skill: <%=  %></p>
             <p>Recipe Name: <%= details.recipe_name %></p>
             <p>Main Resource: <%= details.main_resource %></p>
             <p>Quantity: <%= details.main_quantity %></p>
@@ -46,7 +45,7 @@
                 <tbody>
                     <% submissions.forEach(submissions => { %>
                         <tr>
-                            <td><%= %></td>
+                            <td><%= submissions.craft_skill %></td>
                             <td><%= submissions.item_name %></td>
                             <td><%= submissions.main_resource %></td>
                             <td><%= submissions.main_num %></td>
