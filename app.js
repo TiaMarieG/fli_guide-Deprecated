@@ -77,7 +77,7 @@ app.get('/carpenter-guide', (req, res) => {
 });
 
 app.get('/cook-guide', (req, res) => {
-    life = cook;
+    life = "cook";
     res.render('life_guides/cook-guide');
 });
 
