@@ -60,6 +60,10 @@ header h1 {
     margin-left: 1.5rem;
 }
 
+.adjust-me {
+    margin-top: 0;
+}
+
 /* Main Styles */
 main {
     grid-area: main;
@@ -227,6 +231,12 @@ h3 {
 
 .main-nav ul{
     margin-top: .5rem;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    text-align: center;
 }
 
 /* Footer Styles */
