@@ -37,3 +37,15 @@ INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, s
 VALUES ("blacksmithing", "iron pants", "iron ingot", 8, "leather", 5, "reflux", 3);
 
 SELECT * FROM crafting_recipes;
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("cooking", "fried egg", "egg", 2, "butter", 1, "salt", 2);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("cooking", "carrot soup", "carrot", 3, "broth", 2, "seasoning", 1);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("cooking", "cheesecake", "cheese", 3, "cake", 3, "strawberries", 3);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("cooking", "cheeseburger", "cheese", 1, "hamburger", 2, "lettuce", 1);
