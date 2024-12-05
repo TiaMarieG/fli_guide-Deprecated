@@ -109,13 +109,15 @@ app.get('/woodcutter-guide', (req, res) => {
 });
 
 // Define a "confirm" route, using the POST method
-app.post('/confirm', (req, res) => {
-    // Get the data from the form that was submitted
-    // from the body of the request object
-    let details = req.body;
+app.post('/submitted-recipes', async (req, res) => {
+
+    const conn = await connect();
+    const data = req.body;
+
+    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("blacksmithing","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity});`);
 
     // Display the confirm page, pass the data
-    res.render('confirm', { details: details });
+    res.render('submitted-recipes', { details: data });
 });
 
 // Tell the app to listen for requests on the designated port
