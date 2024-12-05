@@ -13,7 +13,7 @@ const PORT = 3000;
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'Izzaia8192',
+    password: '611795',
     database: 'fli_guide'
 });
 
