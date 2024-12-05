@@ -52,14 +52,17 @@ app.get('/new-home', (req, res) => {
 });
 
 app.get('/alchemist-guide', (req, res) => {
+    life = "alchemist";
     res.render('life_guides/alchemist-guide');
 });
 
 app.get('/angler-guide', (req, res) => {
+    life = "angler";
     res.render('life_guides/angler-guide');
 });
 
 app.get('/artist-guide', (req, res) => {
+    life = "artist";
     res.render('life_guides/artist-guide');
 });
 
@@ -74,38 +77,47 @@ app.get('/carpenter-guide', (req, res) => {
 });
 
 app.get('/cook-guide', (req, res) => {
+    life = cook;
     res.render('life_guides/cook-guide');
 });
 
 app.get('/farmer-guide', (req, res) => {
+    life = "farmer";
     res.render('life_guides/farmer-guide');
 });
 
 app.get('/hunter-guide', (req, res) => {
+    life = "hunter";
     res.render('life_guides/hunter-guide');
 });
 
 app.get('/magician-guide', (req, res) => {
+    life = "magician";
     res.render('life_guides/magician-guide');
 });
 
 app.get('/mercenary-guide', (req, res) => {
+    life = "mercenary";
     res.render('life_guides/mercenary-guide');
 });
 
 app.get('/miner-guide', (req, res) => {
+    life = "miner";
     res.render('life_guides/miner-guide');
 });
 
 app.get('/paladin-guide', (req, res) => {
+    life = "paladin";
     res.render('life_guides/paladin-guide');
 });
 
 app.get('/tailor-guide', (req, res) => {
+    life = "tailor";
     res.render('life_guides/tailor-guide');
 });
 
 app.get('/woodcutter-guide', (req, res) => {
+    life = "woodcutter";
     res.render('life_guides/woodcutter-guide');
 });
 
