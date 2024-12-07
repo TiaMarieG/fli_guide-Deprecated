@@ -135,6 +135,19 @@ app.post('/missing-recipes', async (req, res) => {
     res.render('missing-recipes', { details: data, submissions : results });
 });
 
+app.post('/submitted-recipes', async (req, res) => {
+
+    const conn = await connect();
+    const data = req.body;
+
+    const results = await conn.query(
+        `SELECT * FROM crafting_recipes WHERE item_name = "${data.recipe_name}"`);
+    console.log(data);
+
+    // Display the confirm page, pass the data
+    res.render('submitted-recipes', { details: data, submissions : results });
+});
+
 // Tell the app to listen for requests on the designated port
 app.listen(PORT, () => {
     console.log(`Server running on port http://localhost:${PORT}`)
