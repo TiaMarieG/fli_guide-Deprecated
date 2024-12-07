@@ -122,7 +122,7 @@ app.get('/woodcutter-guide', (req, res) => {
 });
 
 // Define a "confirm" route, using the POST method
-app.post('/submitted-recipes', async (req, res) => {
+app.post('/missing-recipes', async (req, res) => {
 
     const conn = await connect();
     const data = req.body;
@@ -132,7 +132,7 @@ app.post('/submitted-recipes', async (req, res) => {
      const results = await conn.query ('SELECT * FROM missing_recipes');
 
     // Display the confirm page, pass the data
-    res.render('submitted-recipes', { details: data, submissions : results });
+    res.render('missing-recipes', { details: data, submissions : results });
 });
 
 // Tell the app to listen for requests on the designated port
