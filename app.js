@@ -138,14 +138,13 @@ app.post('/missing-recipes', async (req, res) => {
 app.post('/submitted-recipes', async (req, res) => {
 
     const conn = await connect();
-    const data = req.body;
+    const data = req.body.recipe_name;
 
-    const results = await conn.query(
-        `SELECT * FROM crafting_recipes WHERE item_name = "${data.recipe_name}"`);
-    console.log(data);
-
+    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name = "${data}"`);
+    
     // Display the confirm page, pass the data
-    res.render('submitted-recipes', { details: data, submissions : results });
+    res.render('submitted-recipes', { details: results[0], submissions : results });
+    console.log(results);
 });
 
 // Tell the app to listen for requests on the designated port

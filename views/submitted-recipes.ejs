@@ -18,49 +18,15 @@
 
         <div id="listed-submission">
             <h2>Here is the recipe for that you are looking for: </h2>
-            <p>Recipe Name: <%= details.recipe_name %></p>
+            <p>Recipe Name: <%= details.item_name %></p>
             <p>Main Resource: <%= details.main_resource %></p>
-            <p>Quantity: <%= details.main_quantity %></p>
+            <p>Quantity: <%= details.main_num %></p>
             <p>Secondary Resource: <%= details.sec_resource %></p>
-            <p>Quantity: <%= details.sec_quantity %></p>
+            <p>Quantity: <%= details.sec_num %></p>
             <p>Optional Reagent: <%= details.opt_reagent %></p>
-            <p>Quantity: <%= details.opt_quantity %></p>
+            <p>Quantity: <%= details.opt_num %></p>
         </div>
-
-        <!-- <div>
-            <h2>Interested in seeing what other recipes were submitted?</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Life Skill</th>
-                        <th>Recipe Name</th>
-                        <th>Main Resource</th>
-                        <th>Quantity</th>
-                        <th>Secondary Resource</th>
-                        <th>Quantity</th>
-                        <th>Optional Reagent</th>
-                        <th>Quantity</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% //submissions.forEach(submissions => { %>
-                        <tr>
-                            <td><%= //submissions.craft_skill %></td>
-                            <td><%= //submissions.item_name %></td>
-                            <td><%= //submissions.main_resource %></td>
-                            <td><%= //submissions.main_num %></td>
-                            <td><%= //submissions.sec_resource %></td>
-                            <td><%= //submissions.sec_num %></td>
-                            <td><%= //submissions.opt_reagent %></td>
-                            <td><%= //submissions.opt_num %></td>
-                        </tr>
-                    <% //}); %>
-                </tbody>
-            </table>
-
-        </div> -->
-
-
+        
         <aside>
             <h3>Site Navigation</h3>
             <nav class="main-nav">
