@@ -20,31 +20,37 @@
             <h2 class="adjust-me">Gameplay</h2>
 
             <p>
-                The Cook is a Life you can choose in the game Fantasy Life. It is one of 14 Lives that can be chosen at any time during the game by visiting the Guild Master (except during a story mission).
+                The Cook is a Life you can choose in the game Fantasy Life. It is one of 14 Lives that can be chosen at
+                any time during the game by visiting the Guild Master (except during a story mission).
 
-                The Cook uses frying pans to cook delicious food. There are 84 cook recipes in the base game and 105 with the DLC.
+                The Cook uses frying pans to cook delicious food. There are 84 cook recipes in the base game and 105
+                with the DLC.
             </p>
 
             <h2>Skills</h2>
 
             <p>
-                When the player chooses the Cook life, they learn 4 skills: Cooking, Meat Cuisine, Seafood Cuisine, and Egg & Veg Cuisine. The max skill level is 15 (20 with the DLC). To unlock the new cap, you must reach Legend rank and talk to Divinus with the Cook Life activated. He will increase the cap of all 4 skills to 20 and upgrade the licence to God-in-Training rank.
+                When the player chooses the Cook life, they learn 4 skills: Cooking, Meat Cuisine, Seafood Cuisine, and
+                Egg & Veg Cuisine. The max skill level is 15 (20 with the DLC). To unlock the new cap, you must reach
+                Legend rank and talk to Divinus with the Cook Life activated. He will increase the cap of all 4 skills
+                to 20 and upgrade the licence to God-in-Training rank.
             </p>
 
-            <fieldset class="craft-selection">
-                <legend>Cooking Recipes</legend>
-                <select id="cooking_recipe" name="cooking_recipe">
-                    <option value='none'>-- Select a Recipe --</option>
-                    <option value='fried_egg'>Fried Egg</option>
-                    <option value='carrot_soup'>Carrot Soup</option>
-                    <option value='cheesecake'>Cheesecake</option>
-                    <option value='cheeseburger'>Cheeseburger</option>
-                </select>
+            <form method="post" action="submitted-recipes">
+                <fieldset class="craft-selection">
+                    <legend>Cooking Recipes</legend>
+                    <select id="cooking_recipe" name="cooking_recipe">
+                        <option value='none'>-- Select a Recipe --</option>
+                        <option value='fried_egg'>Fried Egg</option>
+                        <option value='carrot_soup'>Carrot Soup</option>
+                        <option value='cheesecake'>Cheesecake</option>
+                        <option value='cheeseburger'>Cheeseburger</option>
+                    </select>
 
 
-                <button type="submit" class="main-button">Get Recipe</button>
-            </fieldset>
-
+                    <button type="submit" class="main-button">Get Recipe</button>
+                </fieldset>
+            </form>
 
             <h2>Missing Recipe</h2>
 

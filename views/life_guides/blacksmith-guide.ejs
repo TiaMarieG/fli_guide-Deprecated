@@ -37,19 +37,21 @@
                 the cap of all 4 skills to 20 and upgrade the licence to God-in-Training rank.
             </p>
 
-            <fieldset class="craft-selection">
-                <legend>Blacksmith Recipes</legend>
-                <select id="bs_recipe" name="bs_recipe">
-                    <option value='none'>-- Select a Recipe --</option>
-                    <option value='sword'>Sword</option>
-                    <option value='gloves'>Gloves</option>
-                    <option value='helmet'>Helmet</option>
-                    <option value='pants'>Pants</option>
-                </select>
+            <form method="post" action="submitted-recipes">
+                <fieldset class="craft-selection">
+                    <legend>Blacksmith Recipes</legend>
+                    <select id="bs_recipe" name="recipe_name">
+                        <option value='none'>-- Select a Recipe --</option>
+                        <option value='sword'>Sword</option>
+                        <option value='gloves'>Gloves</option>
+                        <option value='helmet'>Helmet</option>
+                        <option value='pants'>Pants</option>
+                    </select>
 
 
-                <button type="submit" class="main-button">Get Recipe</button>
-            </fieldset>
+                    <button type="submit" class="main-button">Get Recipe</button>
+                </fieldset>
+            </form>
 
 
             <h2>Missing Recipe</h2>
@@ -70,22 +72,19 @@
                     <input type="text" id="main_resource" name="main_resource" placeholder="Enter resource">
 
                     <label for="main_quantity">Main Quantity:</label>
-                    <input type="text" id="main_quantity" name="main_quantity"
-                        placeholder="Enter quantity">
+                    <input type="text" id="main_quantity" name="main_quantity" placeholder="Enter quantity">
 
                     <label for="sec_resource">Secondary Resource:</label>
                     <input type="text" id="sec_resource" name="sec_resource" placeholder="Enter resource">
 
                     <label for="sec_quantity">Secondary Quantity:</label>
-                    <input type="text" id="sec_quantity" name="sec_quantity"
-                        placeholder="Enter quantity">
+                    <input type="text" id="sec_quantity" name="sec_quantity" placeholder="Enter quantity">
 
                     <label for="opt_reagent">Optional Reagent:</label>
                     <input type="text" id="opt_reagent" name="opt_reagent" placeholder="Enter reagent">
 
                     <label for="opt_quantity">Optional Reagent Quantity:</label>
-                    <input type="text" id="opt_quantity" name="opt_quantity"
-                        placeholder="Enter quantity">
+                    <input type="text" id="opt_quantity" name="opt_quantity" placeholder="Enter quantity">
 
                     <br>
 
