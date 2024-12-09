@@ -63,3 +63,15 @@ INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, s
 VALUES ("alchemy", "stun antidote", "cureweed", 1, "antistun berries", 1, "springwater", 1);
 
 SELECT * FROM crafting_recipes;
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("carpenter", "fishing pole", "wood", 3, "string", 2, "hook", 1);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("carpenter", "staff", "wood", 5, "polish", 2, null, null);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("carpenter", "desk", "wood", 8, "iron ingots", 3, "leather", 2);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("carpenter", "chair", "wood", 5, "wheels", 4, "leather", 3);
