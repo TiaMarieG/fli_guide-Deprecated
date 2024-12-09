@@ -30,6 +30,31 @@ html, body {
     grid-gap: 1rem;
 }
 
+/* Void */
+
+.void img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+
+.void{
+    background-color: black;
+}
+
+.void h1{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.void h2 {
+    color: white;
+    border: none;
+    background-color: black;
+}
+
 /* Header Styles */
 
 header::before {
@@ -264,17 +289,4 @@ footer p {
 
 .social-links a {
     padding-right: 1rem;
-}
-
-/* Void */
-
-.void img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%; 
-}
-
-.void {
-    background-color: black;
 }
