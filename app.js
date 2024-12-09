@@ -61,7 +61,7 @@ app.get('/artist-guide', (req, res) => {
 
 app.get('/blacksmith-guide', (req, res) => {
     life = "blacksmith";
-    res.render('life_guides/blacksmith-guide');
+    res.render('life_guides/blacksmith-guide', {errors : [] });
 });
 
 app.get('/carpenter-guide', (req, res) => {
@@ -146,6 +146,18 @@ app.post('/submitted-recipes', async (req, res) => {
 
     const conn = await connect();
     const data = req.body.recipe_name;
+
+    let isValid = true;
+    let errors = [];
+
+    if (data === "none") {
+        isValid = false;
+    }
+
+    if (!isValid) {
+        res.render('uh-oh');
+        return;
+    }
 
     const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE "%${data}%"`);
     
