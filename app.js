@@ -127,7 +127,21 @@ app.post('/missing-recipes', async (req, res) => {
     const conn = await connect();
     const data = req.body;
 
-    await conn.query(`INSERT INTO missing_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) VALUES ("${life}","${data.recipe_name}", "${data.main_resource}", ${data.main_quantity}, "${data.sec_resource}", ${data.sec_quantity}, "${data.opt_reagent}", ${data.opt_quantity})`);
+    // Validate and sanitize inputs
+    const recipeName = data.recipe_name || '';
+    const mainResource = data.main_resource || '';
+    const mainQuantity = parseInt(data.main_quantity, 10) || 0;
+    const secResource = data.sec_resource || '';
+    const secQuantity = parseInt(data.sec_quantity, 10) || 0;
+    const optReagent = data.opt_reagent || '';
+    const optQuantity = parseInt(data.opt_quantity, 10) || 0;
+
+    await conn.query(
+        `INSERT INTO missing_recipes 
+        (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+        [life, recipeName, mainResource, mainQuantity, secResource, secQuantity, optReagent, optQuantity]
+    );
 
      const results = await conn.query ('SELECT * FROM missing_recipes');
 
@@ -144,7 +158,6 @@ app.post('/submitted-recipes', async (req, res) => {
     
     // Display the confirm page, pass the data
     res.render('submitted-recipes', { details: results[0], submissions : results });
-    console.log(results);
 });
 
 // Tell the app to listen for requests on the designated port

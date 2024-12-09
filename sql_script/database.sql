@@ -3,24 +3,24 @@ CREATE DATABASE fli_guide;
 CREATE TABLE crafting_recipes (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     craft_skill VARCHAR(255),
-    item_name VARCHAR(255) DEFAULT NULL,
-    main_resource VARCHAR(255) DEFAULT NULL,
+    item_name VARCHAR(255) DEFAULT "N/A",
+    main_resource VARCHAR(255) DEFAULT "N/A",
     main_num int DEFAULT 0,
-    sec_resource VARCHAR(255) DEFAULT NULL,
+    sec_resource VARCHAR(255) DEFAULT "N/A",
     sec_num int DEFAULT 0,
-    opt_reagent VARCHAR(255) DEFAULT NULL,
+    opt_reagent VARCHAR(255) DEFAULT "N/A",
     opt_num int DEFAULT 0
 );
 
 CREATE TABLE missing_recipes (
 	id INT AUTO_INCREMENT PRIMARY KEY,
     craft_skill VARCHAR(255),
-    item_name VARCHAR(255) DEFAULT NULL,
-    main_resource VARCHAR(255) DEFAULT NULL,
+    item_name VARCHAR(255) DEFAULT "N/A",
+    main_resource VARCHAR(255) DEFAULT "N/A",
     main_num int DEFAULT 0,
-    sec_resource VARCHAR(255) DEFAULT NULL,
+    sec_resource VARCHAR(255) DEFAULT "N/A",
     sec_num int DEFAULT 0,
-    opt_reagent VARCHAR(255) DEFAULT NULL,
+    opt_reagent VARCHAR(255) DEFAULT "N/A",
     opt_num int DEFAULT 0
 );
 
