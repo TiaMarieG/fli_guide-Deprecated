@@ -127,13 +127,13 @@ app.post('/missing-recipes', async (req, res) => {
     const conn = await connect();
     const data = req.body;
 
-    // Validate and sanitize inputs
-    const recipeName = data.recipe_name || '';
-    const mainResource = data.main_resource || '';
-    const mainQuantity = parseInt(data.main_quantity, 10) || 0;
-    const secResource = data.sec_resource || '';
+    // Sanitize and handle empty inputs
+    const recipeName = data.recipe_name || null; // Use NULL for empty string fields
+    const mainResource = data.main_resource || null;
+    const mainQuantity = parseInt(data.main_quantity, 10) || 0; // Default to 0 for numeric fields
+    const secResource = data.sec_resource || null;
     const secQuantity = parseInt(data.sec_quantity, 10) || 0;
-    const optReagent = data.opt_reagent || '';
+    const optReagent = data.opt_reagent || null;
     const optQuantity = parseInt(data.opt_quantity, 10) || 0;
 
     await conn.query(
