@@ -13,7 +13,7 @@ const PORT = 3000;
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: '611795',
+    password: 'Izzaia8192',
     database: 'fli_guide'
 });
 
@@ -42,13 +42,6 @@ app.get('/', (req, res) => {
 
     // Return home page
     res.render('home');
-});
-
-// Define a "default" route, 
-app.get('/new-home', (req, res) => {
-
-    // Return home page
-    res.render('new-home-test');
 });
 
 app.get('/alchemist-guide', (req, res) => {
