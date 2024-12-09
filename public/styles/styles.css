@@ -234,9 +234,16 @@ h3 {
     padding-left: 0;
 }
 
+/* List Styles */
+
 li {
     list-style: none;
     text-align: center;
+}
+
+.equipment-list li {
+    list-style:circle;
+    text-align: left;
 }
 
 /* Footer Styles */

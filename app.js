@@ -147,7 +147,7 @@ app.post('/submitted-recipes', async (req, res) => {
     const conn = await connect();
     const data = req.body.recipe_name;
 
-    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name = "${data}"`);
+    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE "%${data}%"`);
     
     // Display the confirm page, pass the data
     res.render('submitted-recipes', { details: results[0], submissions : results });
