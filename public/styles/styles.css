@@ -15,6 +15,7 @@ html, body {
     margin: auto;
 }
 
+
 .content-wrapper {
     background-color: #fee7b3;
     font-size: 18px;
@@ -28,6 +29,22 @@ html, body {
         "footer footer";
 
     grid-gap: 1rem;
+}
+@media screen and (max-width:650px) {
+    .main-page {
+        width: 95%;
+    }
+
+    .content-wrapper {
+        font-size: 17px;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+    }
 }
 
 /* Void */
@@ -65,10 +82,8 @@ header::before {
     height: 0;
     padding-top: 30%;
 
-    /* background-size: cover; */
     content: "";
     display: block;
-    /* height: 20rem;  */
 }
 
 header {
@@ -83,6 +98,12 @@ header h1 {
 
 .adjust-me {
     margin-top: 0;
+}
+@media screen and (max-width:650px) {
+    header h1 {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 /* Main Styles */
@@ -119,6 +140,13 @@ main {
     padding-right: .25rem;
 }
 
+@media screen and (max-width:650px) {
+    #combat-professions nav {
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
 /* Gathering Profession Styles */
 
 #gathering-professions nav {
@@ -137,6 +165,13 @@ main {
 
 #gathering-professions img {
     padding-right: .25rem;
+}
+
+@media screen and (max-width:650px) {
+    #gathering-professions nav {
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
 }
 
 /* Crafting Profession Styles */
@@ -169,6 +204,20 @@ main {
 
 #crafting-professions img {
     padding-right: .25rem;
+}
+
+@media screen and (max-width:650px) {
+    #craft-nav-div nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+        height: auto;
+
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
 }
 
 /* Form Styles */
@@ -253,6 +302,12 @@ h3 {
 .main-nav ul{
     margin-top: .5rem;
     padding-left: 0;
+}
+@media screen and (max-width:650px) {
+    aside {
+        margin: auto;
+        width: 95%;
+    }
 }
 
 /* List Styles */
