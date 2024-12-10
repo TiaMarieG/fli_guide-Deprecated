@@ -13,7 +13,7 @@ const PORT = 3000;
 const pool = mariadb.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'Izzaia8192',
+    password: '611795',
     database: 'fli_guide'
 });
 
@@ -169,7 +169,8 @@ app.post('/submitted-recipes', async (req, res) => {
     }
 
     // Query the "crafting_recipes" table for recipes that match the submitted name
-    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE "%${data}%"`);
+    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE CONCAT('%', ?, '%')`,
+    [data]);
 
     // Render the "submitted-recipes" template and pass the first matched result (details) 
     // and all query results (submissions) to the template
