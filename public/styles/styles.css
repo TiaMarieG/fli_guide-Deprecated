@@ -321,11 +321,11 @@ li {
 }
 
 .equipment-list li {
-    list-style: circle;
+    list-style: disc;
     text-align: left;
 }
 .abilities-list li {
-    list-style:circle;
+    list-style: disc;
     text-align: left;
 }
 
