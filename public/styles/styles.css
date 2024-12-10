@@ -350,6 +350,25 @@ li {
     content: '\25BC'; /* Unicode for a down-pointing triangle */
     transform: rotate(0deg);
 }
+
+.command-table {
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Combines table borders */
+    width: 80%; /* Makes the table responsive */
+    max-width: 800px; /* Restricts the table width for better readability */
+}
+
+table.command-table th,
+table.command-table td {
+    padding: 10px 15px; /* Adds spacing inside each cell */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid black; /* Adds borders between cells */
+}
+
+table.command-table th {
+    font-weight: bold; /* Makes header text bold */
+    text-align: center; /* Centers the header text */
+}
 /* Footer Styles */
 
 footer {
