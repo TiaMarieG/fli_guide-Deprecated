@@ -330,6 +330,26 @@ li {
     text-align: left;
 }
 
+.command-list summary {
+    list-style: none;
+    cursor: pointer;
+    position:relative;
+    padding-left: 20px;
+}
+
+.command-list summary::before {
+    content: '\25B6'; /* Unicode for a right-pointing triangle */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.command-list[open] summary::before {
+    content: '\25BC'; /* Unicode for a down-pointing triangle */
+    transform: rotate(0deg);
+}
 /* Footer Styles */
 
 footer {
