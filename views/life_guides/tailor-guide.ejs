@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLi-Blacksmithing Guide</title>
+    <title>Fli-Tailor Guide</title>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image" href="images/bone_dragon.jpg" alt="Fantasy Life i Logo and Scenery Art">
@@ -12,6 +12,88 @@
 
 <body class="main-page">
     <div class="content-wrapper">
+
+        <header>
+            <h1>Tailor</h1>
+        </header>
+
+        <main>
+            <h2>Gameplay</h2>
+
+
+            <p>
+                The Tailor is a life you can choose in the game Fantasy Life.
+                It is one of 12 Lives that can be chosen at any time during the
+                game by visiting the Guild Master (except during a story mission).
+
+                The Tailor uses needles to make clothes, accessories and furniture.
+                There are 167 tailor recipes in the base game and 259 with the DLC.
+            </p>
+
+            <h2>Skills</h2>
+
+            <p>
+                When the player chooses the Tailor life, they learn 4 skills: Sewing, Garment Tailoring, Misc.
+                Tailoring, and Fabric Tailoring. The max skill level is 15 (20 with the DLC). To unlock the new cap, you
+                must reach Legend rank and talk to Divinus with the Tailor Life activated. He will increase the cap of
+                all 4 skills to 20 and upgrade the licence to God-in-Training rank.
+            </p>
+
+            <form method="post" action="submitted-recipes">
+                <fieldset class="craft-selection">
+                    <legend>Tailor Recipes</legend>
+                    <select id="tail_recipe" name="recipe_name">
+                        <option value='none'>-- Select a Recipe --</option>
+                        <option value='castele blouse'>Castele Blouse</option>
+                        <option value='castele shirt'>Castele Shirt</option>
+                        <option value='castele skirt'>Castele Skirt</option>
+                        <option value='castele slacks'>Castele Slacks</option>
+                    </select>
+
+
+                    <button type="submit" class="main-button">Get Recipe</button>
+                </fieldset>
+            </form>
+
+            <h2>Missing Recipe</h2>
+
+            <p>
+                Data for the game is collected at the pace of whenever I'm able to play (which isn't often). If you see
+                a recipe that isn't included in the option above, feel free to submit it for review! I'll take a look
+                and add it to the database once it's determined that it's valid.
+            </p>
+
+            <form method="post" action="missing-recipes">
+
+                <fieldset class="missing_recipe">
+                    <legend>Tailor Recipe</legend>
+                    <label for="recipe_name">Recipe Name:</label>
+                    <input type="text" id="recipe_name" name="recipe_name" placeholder="Enter recipe">
+
+                    <label for="main_resource">Main Resource:</label>
+                    <input type="text" id="main_resource" name="main_resource" placeholder="Enter resource">
+
+                    <label for="main_quantity">Main Quantity:</label>
+                    <input type="text" id="main_quantity" name="main_quantity" placeholder="Enter quantity">
+
+                    <label for="sec_resource">Secondary Resource:</label>
+                    <input type="text" id="sec_resource" name="sec_resource" placeholder="Enter resource">
+
+                    <label for="sec_quantity">Secondary Quantity:</label>
+                    <input type="text" id="sec_quantity" name="sec_quantity" placeholder="Enter quantity">
+
+                    <label for="opt_reagent">Optional Reagent:</label>
+                    <input type="text" id="opt_reagent" name="opt_reagent" placeholder="Enter reagent">
+
+                    <label for="opt_quantity">Optional Reagent Quantity:</label>
+                    <input type="text" id="opt_quantity" name="opt_quantity" placeholder="Enter quantity">
+
+                    <br>
+
+                    <button type="submit" class="main-button">Submit Recipe</button>
+                </fieldset>
+            </form>
+        </main>
 
 
         <aside>

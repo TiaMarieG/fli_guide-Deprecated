@@ -62,7 +62,6 @@ VALUES ("alchemy", "poison antidote", "cureweed", 1, "antidote berries", 1, "spr
 INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
 VALUES ("alchemy", "stun antidote", "cureweed", 1, "antistun berries", 1, "springwater", 1);
 
-SELECT * FROM crafting_recipes;
 
 INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
 VALUES ("carpenter", "fishing pole", "wood", 3, "string", 2, "hook", 1);
@@ -75,3 +74,17 @@ VALUES ("carpenter", "desk", "wood", 8, "iron ingots", 3, "leather", 2);
 
 INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
 VALUES ("carpenter", "chair", "wood", 5, "wheels", 4, "leather", 3);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("tailor", "castele blouse", "dandelion cotton", 2, "string", 1, null, null);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("tailor", "castele shirt", "dandelion cotton", 2, "string", 1, null, null);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("tailor", "castele skirt", "woven straw fabric", 1, "string", 1, null, null);
+
+INSERT INTO crafting_recipes (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num)
+VALUES ("tailor", "castele slacks", "woven straw fabric", 1, "string", 1, null, null);
+
+SELECT * FROM crafting_recipes;
