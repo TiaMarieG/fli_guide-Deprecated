@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+// Creating gets to the different pages
 // For each page, it saves or rewrites the value of the life you are on to use for the database
 app.get('/alchemist-guide', (req, res) => {
     life = "alchemist";
