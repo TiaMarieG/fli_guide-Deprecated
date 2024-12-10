@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+// For each page, it saves or rewrites the value of the life you are on to use for the database
 app.get('/alchemist-guide', (req, res) => {
     life = "alchemist";
     res.render('life_guides/alchemist-guide');
@@ -116,11 +117,12 @@ app.get('/woodcutter-guide', (req, res) => {
 
 // Define a "confirm" route, using the POST method
 app.post('/missing-recipes', async (req, res) => {
-
+    // Establish a connection to the database
     const conn = await connect();
+    // Retrieve the data sent in the POST request body
     const data = req.body;
 
-    // Sanitize and handle empty inputs
+    // Sanitize and handle empty inputs by assigning default values
     const recipeName = data.recipe_name || null; // Use NULL for empty string fields
     const mainResource = data.main_resource || null;
     const mainQuantity = parseInt(data.main_quantity, 10) || 0; // Default to 0 for numeric fields
@@ -129,6 +131,7 @@ app.post('/missing-recipes', async (req, res) => {
     const optReagent = data.opt_reagent || null;
     const optQuantity = parseInt(data.opt_quantity, 10) || 0;
 
+    // Insert the sanitized data into the "missing_recipes" table using a parameterized query
     await conn.query(
         `INSERT INTO missing_recipes 
         (craft_skill, item_name, main_resource, main_num, sec_resource, sec_num, opt_reagent, opt_num) 
@@ -136,32 +139,39 @@ app.post('/missing-recipes', async (req, res) => {
         [life, recipeName, mainResource, mainQuantity, secResource, secQuantity, optReagent, optQuantity]
     );
 
+    // Query all data from the "missing_recipes" table to show updated entries
      const results = await conn.query ('SELECT * FROM missing_recipes');
 
-    // Display the confirm page, pass the data
+    // Render the "missing-recipes" template and pass the form data and query results to it
     res.render('missing-recipes', { details: data, submissions : results });
 });
 
 app.post('/submitted-recipes', async (req, res) => {
-
+    // Establish a connection to the database
     const conn = await connect();
+    // Retrieve the recipe name from the POST request body    
     const data = req.body.recipe_name;
 
+    // Validate the input to ensure it is not invalid or empty
     let isValid = true;
     let errors = [];
 
+    // If the user selected "none", mark the input as invalid
     if (data === "none") {
         isValid = false;
     }
 
+    // If the input is invalid, render the "uh-oh" error page and stop further processing
     if (!isValid) {
         res.render('uh-oh');
         return;
     }
 
+    // Query the "crafting_recipes" table for recipes that match the submitted name
     const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE "%${data}%"`);
-    
-    // Display the confirm page, pass the data
+
+    // Render the "submitted-recipes" template and pass the first matched result (details) 
+    // and all query results (submissions) to the template
     res.render('submitted-recipes', { details: results[0], submissions : results });
 });
 
