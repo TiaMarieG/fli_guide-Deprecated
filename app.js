@@ -169,8 +169,7 @@ app.post('/submitted-recipes', async (req, res) => {
     }
 
     // Query the "crafting_recipes" table for recipes that match the submitted name
-    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE CONCAT('%', ?, '%')`,
-    [data]);
+    const results = await conn.query(`SELECT * FROM crafting_recipes WHERE item_name LIKE ('%${data}%')`);
 
     // Render the "submitted-recipes" template and pass the first matched result (details) 
     // and all query results (submissions) to the template
