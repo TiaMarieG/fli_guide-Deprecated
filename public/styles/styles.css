@@ -49,7 +49,7 @@ body {
     }
 }
 
-/* Void */
+/* Void Styles */
 
 .void img {
     display: block;
@@ -251,7 +251,7 @@ a:visited {
     color: #551f00;
 }
 
-/* Text Styles */
+/* Text and Header Styles */
 
 h1,
 h2,
