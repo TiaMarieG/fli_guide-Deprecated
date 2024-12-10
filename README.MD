@@ -12,6 +12,11 @@ The goal of this personal project is to create a main source of information that
 
 Fantasy Life i is not set to release until April 2025, so much of the data that's seen on this guide was pulled from its predecessor - Fantasy Life. Once Fantasy Life i has gone live, all information will be updated.
 
+## Features
+* A comprehensive list of every available class or 'life'
+* Quickly peruse recipes and see what materials are needed to make them
+* 
+
 ## Contributions
 
 **Tia Marie Gordon**

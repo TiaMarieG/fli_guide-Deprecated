@@ -1,6 +1,7 @@
 /* Overall Styling */
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -29,9 +30,8 @@ html, body {
         "footer footer";
 
     grid-gap: 1rem;
-
-
 }
+
 @media screen and (max-width:780px) {
     .main-page {
         width: 95%;
@@ -42,10 +42,10 @@ html, body {
 
         grid-template-columns: 1fr;
         grid-template-areas:
-        "header"
-        "main"
-        "sidebar"
-        "footer";
+            "header"
+            "main"
+            "sidebar"
+            "footer";
     }
 }
 
@@ -55,14 +55,14 @@ html, body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%; 
+    width: 75%;
 }
 
-.void{
+.void {
     background-color: black;
 }
 
-.void h1{
+.void h1 {
     color: white;
     text-align: center;
     text-decoration: none;
@@ -101,6 +101,7 @@ header h1 {
 .adjust-me {
     margin-top: 0;
 }
+
 @media screen and (max-width:780px) {
     header h1 {
         margin: auto;
@@ -189,11 +190,11 @@ main {
 
 #craft-nav-div nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    /* height: 100px; */
+    height: 100px;
     column-gap: 5rem;
     row-gap: 1rem;
 }
@@ -214,7 +215,7 @@ main {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-       
+
         height: auto;
 
         column-gap: 2rem;
@@ -257,7 +258,7 @@ h1,
 h2,
 h3 {
     color: #551f00;
-    
+
 }
 
 h1 {
@@ -301,10 +302,11 @@ h3 {
     margin-bottom: 0;
 }
 
-.main-nav ul{
+.main-nav ul {
     margin-top: .5rem;
     padding-left: 0;
 }
+
 @media screen and (max-width:780px) {
     aside {
         margin: auto;
@@ -320,7 +322,7 @@ li {
 }
 
 .equipment-list li {
-    list-style:circle;
+    list-style: circle;
     text-align: left;
 }
 
