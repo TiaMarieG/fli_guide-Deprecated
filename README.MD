@@ -15,7 +15,13 @@ Fantasy Life i is not set to release until April 2025, so much of the data that'
 ## Features
 * A comprehensive list of every available class or 'life'
 * Quickly peruse recipes and see what materials are needed to make them
-* 
+* A run down of combat lives and relevant skills
+* Access to links related to the official webpage or useful fandom resources
+
+## Limitations
+* No automation for processing missing data. Has to be done manually
+* Useless data can be submitted to the database that would have to be filtered through
+* If game data is changed on the backend, it might be missed and provided information could be irrelevant
 
 ## Contributions
 
