@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+// Creating gets to the different pages
 app.get('/alchemist-guide', (req, res) => {
     life = "alchemist";
     res.render('life_guides/alchemist-guide');
