@@ -1,10 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Overall Styling */
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -15,9 +12,10 @@ html, body {
     display: flex;
     flex-direction: column;
 
-    width: 55%;
+    width: 60%;
     margin: auto;
 }
+
 
 .content-wrapper {
     background-color: #fee7b3;
@@ -34,14 +32,60 @@ html, body {
     grid-gap: 1rem;
 }
 
+@media screen and (max-width:780px) {
+    .main-page {
+        width: 95%;
+    }
+
+    .content-wrapper {
+        font-size: 17px;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+}
+
+/* Void Styles */
+
+.void img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.void {
+    background-color: black;
+}
+
+.void h1 {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.void h2 {
+    color: white;
+    border: none;
+    background-color: black;
+}
+
 /* Header Styles */
 
-.main-page header::before {
-    background: url(../images/banner.jpg) center;
+header::before {
+    background: url(../images/banner.jpg) no-repeat center center;
     background-size: cover;
+
+    width: 100%;
+    height: 0;
+    padding-top: 30%;
+
     content: "";
     display: block;
-    height: 20rem;
 }
 
 header {
@@ -52,6 +96,17 @@ header h1 {
     margin-top: .75rem;
     margin-bottom: 0;
     margin-left: 1.5rem;
+}
+
+.adjust-me {
+    margin-top: 0;
+}
+
+@media screen and (max-width:780px) {
+    header h1 {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 /* Main Styles */
@@ -88,6 +143,13 @@ main {
     padding-right: .25rem;
 }
 
+@media screen and (max-width:780px) {
+    #combat-professions nav {
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
 /* Gathering Profession Styles */
 
 #gathering-professions nav {
@@ -108,6 +170,13 @@ main {
     padding-right: .25rem;
 }
 
+@media screen and (max-width:780px) {
+    #gathering-professions nav {
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
 /* Crafting Profession Styles */
 
 #craft-nav-div {
@@ -121,11 +190,10 @@ main {
 
 #craft-nav-div nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 
-    height: 100px;
     column-gap: 5rem;
     row-gap: 1rem;
 }
@@ -138,6 +206,34 @@ main {
 
 #crafting-professions img {
     padding-right: .25rem;
+}
+
+@media screen and (max-width:780px) {
+    #craft-nav-div nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        height: auto;
+
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+}
+
+/* Form Styles */
+
+.missing_recipe {
+    display: grid;
+}
+
+.missing_recipe input {
+    width: 50%;
+}
+
+#listed-submission p {
+    padding-left: 1.5rem;
 }
 
 /* Link Styles */
@@ -155,13 +251,17 @@ a:visited {
     color: #551f00;
 }
 
-/* Text Styles */
+/* Text and Header Styles */
 
 h1,
 h2,
 h3 {
     color: #551f00;
-    
+
+}
+
+h1 {
+    text-decoration: underline;
 }
 
 h2 {
@@ -176,6 +276,11 @@ h2 {
     margin-right: 1rem;
 }
 
+main p {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
 /* Aside Styles */
 
 aside {
@@ -185,6 +290,8 @@ aside {
 
     border: solid 3px #948163;
     border-radius: .5rem;
+
+    height: fit-content;
 }
 
 h3 {
@@ -194,10 +301,74 @@ h3 {
     margin-bottom: 0;
 }
 
-.main-nav ul{
+.main-nav ul {
     margin-top: .5rem;
+    padding-left: 0;
 }
 
+@media screen and (max-width:780px) {
+    aside {
+        margin: auto;
+        width: 95%;
+    }
+}
+
+/* List Styles */
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+.equipment-list li {
+    list-style: disc;
+    text-align: left;
+}
+.abilities-list li {
+    list-style: disc;
+    text-align: left;
+}
+
+.command-list summary {
+    list-style: none;
+    cursor: pointer;
+    position:relative;
+    padding-left: 20px;
+    margin-left: 1.25rem;
+}
+
+.command-list summary::before {
+    content: '\25B6'; /* Unicode for a right-pointing triangle */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.command-list[open] summary::before {
+    content: '\25BC'; /* Unicode for a down-pointing triangle */
+    transform: rotate(0deg);
+}
+
+.command-table {
+    margin: 0 auto; /* Centers the table horizontally */
+    border-collapse: collapse; /* Combines table borders */
+    width: 80%; /* Makes the table responsive */
+    max-width: 800px; /* Restricts the table width for better readability */
+}
+
+table.command-table th,
+table.command-table td {
+    padding: 10px 15px; /* Adds spacing inside each cell */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid black; /* Adds borders between cells */
+}
+
+table.command-table th {
+    font-weight: bold; /* Makes header text bold */
+    text-align: center; /* Centers the header text */
+}
 /* Footer Styles */
 
 footer {

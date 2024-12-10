@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLi-Blacksmithing Guide</title>
+    <title>FLi-Magician Guide</title>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image" href="images/bone_dragon.jpg" alt="Fantasy Life i Logo and Scenery Art">
@@ -12,44 +12,282 @@
 
 <body class="main-page">
     <div class="content-wrapper">
+        <header>
+            <h1>Magician</h1>
+        </header>
 
+        <!-- Separated sections by title and then posted relevant information within each category -->
+        <main>
+            <h2 class="adjust-me">Gameplay</h2>
+
+            <p>
+                The Magician or Wizard is a Life you can choose in the game Fantasy Life. It is one of 12 Lives that can
+                be chosen at any time during the game by visiting the Guild Master (except during a story mission).
+
+                Magicians use staves (called 'wands' in other versions) to inflict ranged elemental damage to enemies
+                and to heal as well.
+            </p>
+
+            <h2>Skills</h2>
+
+            <p>
+                When the player chooses the Magician life, they learn 5 skills: Magic, Fire Magic, Water Magic, Wind
+                Magic, and Earth Magic. The max skill level is 15 (20 with the DLC). To unlock the new cap, you must
+                reach Legend rank and talk to Divinus with the Magician Life activated. He will increase the cap of all
+                5 skills to 20 and upgrade the license to God-in-Training rank
+            </p>
+
+            <h2>Abilities</h2>
+
+            <p>
+                The Wizard collects spirits (Spirit of Water, Spirit of Wind, Spirit of Earth, and Spirit of Fire) in
+                their staff and uses them to harness power as an attack or healing spell.
+            </p>
+
+            <p>
+                When the player reaches God/Creator rank in the Wizard life, they will gain the ability known as
+                "Ancient Wisdom" which can be activated when the player has a double charged Skill Gauge. When
+                activated, Ancient Wisdom gives a 3x buff to Magic Attacks and the Skill Gauge will continuously refill
+                for 60 seconds. No stamina will be used when casting any magical skills whilst Ancient Wisdom (Creator
+                Mode) is active.
+            </p>
+
+            <!-- Added a dropdown table that contains the abilities of the active life, this reduces the bloat on the page unless the user wants to know what the information is -->
+            <details class="command-list">
+                <summary>
+                    <h3>Command List</h3>
+                </summary>
+                <table class="command-table">
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Button Combination</th>
+                            <th>Rank Learned</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fairy Fire</td>
+                            <td>Set magic to Fire, A</td>
+                            <td>Novice</td>
+                        </tr>
+                        <tr>
+                            <td>Heavy Flame</td>
+                            <td>After third strike of Fairy Fire, A</td>
+                            <td>God-In-Training</td>
+                        </tr>
+                        <tr>
+                            <td>Flame Shot</td>
+                            <td>After Heavy Flame, A</td>
+                            <td>God</td>
+                        </tr>
+                        <tr>
+                            <td>Snowball</td>
+                            <td>Set magic to Water, A</td>
+                            <td>Fledgling</td>
+                        </tr>
+                        <tr>
+                            <td>Iceball</td>
+                            <td>After third strike of Snowball, A</td>
+                            <td>God-In-Training</td>
+                        </tr>
+                        <tr>
+                            <td>Iceball Slam</td>
+                            <td>After Iceball, A</td>
+                            <td>God</td>
+                        </tr>
+                        <tr>
+                            <td>Windcutter</td>
+                            <td>Set magic to Wind, A</td>
+                            <td>Fledgling</td>
+                        </tr>
+                        <tr>
+                            <td>Gale Force</td>
+                            <td>After third strike of Windcutter, A</td>
+                            <td>God-In-Training</td>
+                        </tr>
+                        <tr>
+                            <td>Bolt Strike</td>
+                            <td>After Gale Force, A</td>
+                            <td>God</td>
+                        </tr>
+                        <tr>
+                            <td>Sapling Heal</td>
+                            <td>Set magic to Earth, A</td>
+                            <td>Novice</td>
+                        </tr>
+                        <tr>
+                            <td>Sapling Aid</td>
+                            <td>After third strike of Sapling Heal, A</td>
+                            <td>God-In-Training</td>
+                        </tr>
+                        <tr>
+                            <td>Sapling Cure</td>
+                            <td>After Sapling Aid, A</td>
+                            <td>God</td>
+                        </tr>
+                        <tr>
+                            <td>Fireball</td>
+                            <td>Set magic to Fire, Charge A</td>
+                            <td>Fledgling</td>
+                        </tr>
+                        <tr>
+                            <td>Firesplosion</td>
+                            <td>Set magic to Fire, Long Charge A</td>
+                            <td>Adept</td>
+                        </tr>
+                        <tr>
+                            <td>Fire Storm</td>
+                            <td>Set magic to Fire, Charge X</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Wall of Fire</td>
+                            <td>Set magic to Fire, Long Charge X</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Icy Breath</td>
+                            <td>Set magic to Water, Charge A</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Snapfreeze</td>
+                            <td>Set magic to Water, Long Charge A</td>
+                            <td>Adept</td>
+                        </tr>
+                        <tr>
+                            <td>Ice Storm</td>
+                            <td>Set magic to Water, Charge X</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Blizzard</td>
+                            <td>Set magic to Water, Long Charge X</td>
+                            <td>Expert</td>
+                        </tr>
+                        <tr>
+                            <td>Air Sickle</td>
+                            <td>Set magic to Wind, Charge A</td>
+                            <td>Fledgling</td>
+                        </tr>
+                        <tr>
+                            <td>Razor Wind</td>
+                            <td>Set magic to Wind, Long Charge A</td>
+                            <td>Adept</td>
+                        </tr>
+                        <tr>
+                            <td>Thunder Storm</td>
+                            <td>Set magic to Wind, Charge X</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Cosmic Thunder</td>
+                            <td>Set magic to Wind, Long Charge X</td>
+                            <td>Expert</td>
+                        </tr>
+                        <tr>
+                            <td>Flower Heal</td>
+                            <td>Set magic to Earth, Charge A</td>
+                            <td>Fledgling</td>
+                        </tr>
+                        <tr>
+                            <td>Healing Forest</td>
+                            <td>Set magic to Earth, Long Charge A</td>
+                            <td>Adept</td>
+                        </tr>
+                        <tr>
+                            <td>Healing Meadow</td>
+                            <td>Set magic to Earth, Charge X</td>
+                            <td>Apprentice</td>
+                        </tr>
+                        <tr>
+                            <td>Nature's Bounty</td>
+                            <td>Set magic to Earth, Long Charge X</td>
+                            <td>Expert</td>
+                        </tr>
+                        <tr>
+                            <td>Falling Star</td>
+                            <td>Special Skill fully charged, X</td>
+                            <td>Adept</td>
+                        </tr>
+                        <tr>
+                            <td>Shooting Star</td>
+                            <td>Special Skill fully charged, X</td>
+                            <td>Master</td>
+                        </tr>
+                        <tr>
+                            <td>Meteodrive</td>
+                            <td>Special Skill fully charged, X</td>
+                            <td>God</td>
+                        </tr>
+                        <tr>
+                            <td>Ancient Wisdom</td>
+                            <td>Special Skill Gauge double charged, X</td>
+                            <td>God</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+
+            <h2>Playing the Life</h2>
+
+            <p>
+                A Wizard can be used to support other classes in multiplayer due to their ability to heal not only
+                themselves but their group members in a certain range. The most useful stats for a Magician are
+                Intelligence and Focus.
+            </p>
+
+            <p>
+                Being a Wizard uses a lot of SP, so the player must be sure to have enough SP potions. Apple Juice,
+                Cows' Milk, Springwater and Honey are some easy substitutes. A recommended item is the Magical
+                Milkshake, which temporarily raises your Intelligence stat along with restoring SP. Superior Magical
+                Milkshakes fully restore your SP. The player can also use the "Sit Down" and the "Lie Down" emotes to
+                regain SP at a faster rate.
+            </p>
+
+            <p>
+                Wizards cannot use the majority of Armor craftable by Blacksmiths (with a few exceptions), but can wear
+                most items crafted by a Tailor. Their weak armor makes their Defense poor, so it's advised to keep a
+                distance away from enemies and take advantage of the Wizard's arsenal of ranged attacks.
+            </p>
+
+            <p>
+                The player has to keep weaknesses and resistances of enemies in mind. Different types of magic work
+                better against certain enemies.
+            </p>
+
+            <h2>Equipment</h2>
+
+            <p>
+                The Magicians uses staves/wands to inflict ranged elemental damage to enemies and to heal as well. Staves can
+                be obtained from:
+            </p>
+
+            <p>
+            <ul class="equipment-list">
+                <li>Shops that are all over the world</li>
+                <li>Enemy Drops and Bounties</li>
+                <li>Treasure chests that are all over the world</li>
+                <li>NPCs such as King Erik Stone</li>
+                <li>Crafted by Carpenters</li>
+            </ul>
+            </p>
+
+            <h2>Challenges</h2>
+
+            <p>
+                Class Challenges reward the player with Stars, which accumulate to raise the rank of the player within
+                their selected Life Class. Talk to Master Jinx to cash in challenge rewards.
+            </p>
+        </main>
 
         <aside>
-            <h3>Official Sites</h3>
+            <h3>Site Navigation</h3>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="https://www.fantasylife.jp/fli/en/" target="_blank">Home Page</a></li>
-                    <li><a href="https://www.youtube.com/@LEVEL5ch" target="_blank">LEVEL 5 Youtube Channel</a></li>
-                    <li><a href="https://www.nintendo.com/en-gb/Games/Nintendo-Switch-games/FANTASY-LIFE-i-The-Girl-Who-Steals-Time-2339978.html"
-                            target="_blank">Nintendo Shop</a></li>
+                    <li><a href="/">Home Page</a></li>
                 </ul>
-            </nav>
-
-            <h3>Community Sites</h3>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="https://discord.gg/fantasylife-133342059787452416" target="_blank">Community Discord</a></li>
-                    <li><a href="https://fantasy-life.fandom.com/wiki/Fantasy_Life_i:_The_Girl_Who_Steals_Time"
-                            target="_blank">Fandom Wiki</a></li>
-                    <li><a href="https://www.reddit.com/r/fantasylife/" target="_blank">Reddit</a></li>
-                </ul>
-            </nav>
-
-            <h3>Additional Resources</h3>
-            <nav>
-
-            </nav>
-
-            <h3>Dev Corner</h3>
-            <nav class="main-nav">
-                <ul>
-                    <li>About FLi Guide</li>
-                    <li>Future Plans</li>
-                    <li><a href="https://discord.gg/Xfqb5DXWPS" target="_blank">Feedback & Suggestions</a></li>
-                    <li><a href="https://ko-fi.com/mittoa_gaming" target="_blank">Support FLi Guide</a>
-                    </li>
-                </ul>
-
             </nav>
         </aside>
     </div>
@@ -57,10 +295,6 @@
 
     <footer>
         <p>&copy; 2024 www.fli-guide.com</p>
-        <div class="social-links">
-            <a href="https://discord.gg/Xfqb5DXWPS" target="_blank">Privacy Policy</a>
-            <a href="https://ko-fi.com/mittoa_gaming" target="_blank">Disclaimer</a>
-        </div>
     </footer>
 </body>
 

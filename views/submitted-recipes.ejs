@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fli-Artist Guide</title>
+    <title>Submitted Recipe</title>
 
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image" href="images/bone_dragon.jpg" alt="Fantasy Life i Logo and Scenery Art">
@@ -12,22 +12,28 @@
 
 <body class="main-page">
     <div class="content-wrapper">
-
         <header>
-            <h1>Artist</h1>
+            <h1>Thank you for your selection!</h1>
         </header>
 
-        <main>
-            <h2>Sorry! This is a new life, there is not much information for it yet! This page will update as time goes on.</h2>
+        <!-- Accesses the mariadb by pulling a recipe by name and displaying what components are needed to make it -->
+        <div id="listed-submission">
+            <h2>Here is the recipe for that you are looking for: </h2>
+            <p>Recipe Name: <%= details.item_name %></p>
+            <p>Main Resource: <%= details.main_resource %></p>
+            <p>Quantity: <%= details.main_num %></p>
+            <p>Secondary Resource: <%= details.sec_resource %></p>
+            <p>Quantity: <%= details.sec_num %></p>
+            <p>Optional Reagent: <%= details.opt_reagent %></p>
+            <p>Quantity: <%= details.opt_num %></p>
+        </div>
         
-        </main>
-
-
         <aside>
             <h3>Site Navigation</h3>
             <nav class="main-nav">
                 <ul>
                     <li><a href="/">Home Page</a></li>
+ 
                 </ul>
             </nav>
         </aside>

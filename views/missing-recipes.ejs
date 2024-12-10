@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Recipe</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image" href="images/bone_dragon.jpg" alt="Fantasy Life i Logo and Scenery Art">
+</head>
+
+<body class="main-page">
+    <div class="content-wrapper">
+        <header>
+            <h1>Thank you for the submission!</h1>
+        </header>
+
+        <!-- Displays the recipe that the user entered that will be submitted to the mariadb for review -->
+        <div id="listed-submission">
+            <h2>Here is the recipe for that you submitted for review: </h2>
+            <p>Recipe Name: <%= details.recipe_name %></p>
+            <p>Main Resource: <%= details.main_resource %></p>
+            <p>Quantity: <%= details.main_quantity %></p>
+            <p>Secondary Resource: <%= details.sec_resource %></p>
+            <p>Quantity: <%= details.sec_quantity %></p>
+            <p>Optional Reagent: <%= details.opt_reagent %></p>
+            <p>Quantity: <%= details.opt_quantity %></p>
+        </div>
+
+        <div>
+            <h2>Interested in seeing what other recipes were submitted?</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Life Skill</th>
+                        <th>Recipe Name</th>
+                        <th>Main Resource</th>
+                        <th>Quantity</th>
+                        <th>Secondary Resource</th>
+                        <th>Quantity</th>
+                        <th>Optional Reagent</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% submissions.forEach(submissions => { %>
+                        <tr>
+                            <td><%= submissions.craft_skill %></td>
+                            <td><%= submissions.item_name %></td>
+                            <td><%= submissions.main_resource %></td>
+                            <td><%= submissions.main_num %></td>
+                            <td><%= submissions.sec_resource %></td>
+                            <td><%= submissions.sec_num %></td>
+                            <td><%= submissions.opt_reagent %></td>
+                            <td><%= submissions.opt_num %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <aside>
+            <h3>Site Navigation</h3>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Home Page</a></li>
+ 
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 www.fli-guide.com</p>
+        <div class="social-links">
+            <a href="https://discord.gg/Xfqb5DXWPS" target="_blank">Privacy Policy</a>
+            <a href="https://ko-fi.com/mittoa_gaming" target="_blank">Disclaimer</a>
+        </div>
+    </footer>
+</body>
+
+</html>
