@@ -325,6 +325,10 @@ li {
     list-style: circle;
     text-align: left;
 }
+.abilities-list li {
+    list-style:circle;
+    text-align: left;
+}
 
 /* Footer Styles */
 
