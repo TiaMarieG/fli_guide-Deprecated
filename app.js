@@ -1,5 +1,4 @@
 // Get the express package 
-const e = require('express');
 const express = require('express');
 
 // Instantiate an express (web) app
@@ -29,6 +28,10 @@ app.get('/new-home', (req, res) => {
     // Return home page
     res.render('new-home-test');
 });
+
+app.get('/game-breakdown', (req, res) => {
+    res.render('game-breakdown');
+})
 
 app.get('/alchemist-guide', (req, res) => {
     res.render('life_guides/alchemist-guide');
