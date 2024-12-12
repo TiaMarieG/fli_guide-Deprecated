@@ -554,28 +554,100 @@ video {
   display: none;
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
-.p-4 {
-  padding: 1rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-\[\#a67647\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(166 118 71 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#edccab\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 204 171 / var(--tw-bg-opacity, 1));
 }
 
 .text-center {
   text-align: center;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 /* Overall Styling */
 
 html, body {
   height: 100%;
+  color: #551f00;
 }
 
 /* Homepage Styles */
@@ -584,7 +656,7 @@ html, body {
   background: url(../images/crafting_icons.gif) repeat 0 0;
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 60%;
   margin: auto;
 }
 
@@ -706,26 +778,11 @@ main {
 
 /* Link Styles */
 
-a:link {
-  color: #551f00;
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  color: #551f00;
-}
-
 /* Text Styles */
-
-h1,
-h2,
-h3 {
-  color: #551f00;
-}
 
 h2 {
   background-color: #eecea8;
@@ -741,28 +798,13 @@ h2 {
 
 aside {
   grid-area: sidebar;
-  background-color: #eecea8;
-  margin-right: 1.5rem;
-  border: solid 3px #948163;
-  border-radius: .5rem;
-}
-
-h3 {
-  text-align: center;
-  text-decoration: underline;
-  margin-bottom: 0;
-}
-
-.main-nav ul{
-  margin-top: .5rem;
 }
 
 /* Footer Styles */
 
 footer {
   grid-area: footer;
-  background-color: #eecea8;
-  color: #551f00;
+  background-color: #edccab;
   margin-top: auto;
   padding: .5rem;
   display: flex;

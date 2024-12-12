@@ -5,7 +5,12 @@ module.exports = {
     "./public/**/*.{html,js,ejs}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'pancho': '#edccab',
+        'cape-palliser': '#a67647'
+      }
+    },
   },
   plugins: [],
 }

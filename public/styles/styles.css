@@ -6,6 +6,7 @@
 
 html, body {
     height: 100%;
+    color: #551f00;
 }
 
 /* Homepage Styles */
@@ -15,7 +16,7 @@ html, body {
     display: flex;
     flex-direction: column;
 
-    width: 55%;
+    width: 60%;
     margin: auto;
 }
 
@@ -142,27 +143,11 @@ main {
 
 /* Link Styles */
 
-a:link {
-    color: #551f00;
-    text-decoration: none;
-}
-
 a:hover {
     text-decoration: underline;
 }
 
-a:visited {
-    color: #551f00;
-}
-
 /* Text Styles */
-
-h1,
-h2,
-h3 {
-    color: #551f00;
-    
-}
 
 h2 {
     background-color: #eecea8;
@@ -180,22 +165,6 @@ h2 {
 
 aside {
     grid-area: sidebar;
-    background-color: #eecea8;
-    margin-right: 1.5rem;
-
-    border: solid 3px #948163;
-    border-radius: .5rem;
-}
-
-h3 {
-    text-align: center;
-    text-decoration: underline;
-
-    margin-bottom: 0;
-}
-
-.main-nav ul{
-    margin-top: .5rem;
 }
 
 /* Footer Styles */
@@ -203,9 +172,7 @@ h3 {
 footer {
     grid-area: footer;
 
-    background-color: #eecea8;
-    color: #551f00;
-
+    background-color: #edccab;
     margin-top: auto;
     padding: .5rem;
 
