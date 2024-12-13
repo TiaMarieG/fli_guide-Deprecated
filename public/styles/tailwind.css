@@ -584,8 +584,28 @@ video {
   display: grid;
 }
 
+.aspect-\[3\/1\] {
+  aspect-ratio: 3/1;
+}
+
 .aspect-\[4\/3\] {
   aspect-ratio: 4/3;
+}
+
+.aspect-\[4\/1\] {
+  aspect-ratio: 4/1;
+}
+
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
+
+.aspect-\[2\/1\] {
+  aspect-ratio: 2/1;
 }
 
 .grid-cols-3 {
@@ -673,14 +693,6 @@ html, body {
 }
 
 /* Header Styles */
-
-.main-page header::before {
-  background: url(../images/banner.jpg) center;
-  background-size: cover;
-  content: "";
-  display: block;
-  height: 20rem;
-}
 
 header {
   grid-area: header;
@@ -806,7 +818,7 @@ footer {
   grid-area: footer;
   background-color: #edccab;
   margin-top: auto;
-  padding: .5rem;
+  padding: .75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

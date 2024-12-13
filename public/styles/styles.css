@@ -37,14 +37,6 @@ html, body {
 
 /* Header Styles */
 
-.main-page header::before {
-    background: url(../images/banner.jpg) center;
-    background-size: cover;
-    content: "";
-    display: block;
-    height: 20rem;
-}
-
 header {
     grid-area: header;
 }
@@ -174,7 +166,7 @@ footer {
 
     background-color: #edccab;
     margin-top: auto;
-    padding: .5rem;
+    padding: .75rem;
 
     display: flex;
     justify-content: space-between;

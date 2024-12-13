@@ -1,38 +1,40 @@
-// Get the express package 
 const express = require('express');
-
-// Instantiate an express (web) app
 const app = express();
-
-// Define a port number for the app to listen on
 const PORT = 3000;
 
-// Tell the app to encode data into JSON format
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-// Set your view (templating) engine to "EJS"
-// (We use a templating engine to create dynamic web pages)
 app.set('view engine', 'ejs');
 
-// Define a "default" route, 
+// "default" route
 app.get('/', (req, res) => {
 
-    // Return home page
     res.render('home');
 });
 
-// Define a "default" route, 
-app.get('/new-home', (req, res) => {
-
-    // Return home page
-    res.render('new-home-test');
-});
-
+// Individual categories "home" routes
 app.get('/game-breakdown', (req, res) => {
     res.render('game-breakdown');
 })
 
+app.get('/life-guides', (req, res) => {
+    res.render('life-guides');
+})
+
+app.get('/world-of-fli', (req, res) => {
+    res.render('world-of-fli');
+})
+
+app.get('/quest-guide', (req, res) => {
+    res.render('quest-guide');
+})
+
+app.get('/fli-story', (req, res) => {
+    res.render('fli-story');
+})
+
+//Live pages
 app.get('/alchemist-guide', (req, res) => {
     res.render('life_guides/alchemist-guide');
 })
