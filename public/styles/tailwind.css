@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -580,6 +584,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .grid {
   display: grid;
 }
@@ -592,24 +600,29 @@ video {
   aspect-ratio: 4/3;
 }
 
-.aspect-\[4\/1\] {
-  aspect-ratio: 4/1;
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
+.min-h-screen {
+  min-height: 100vh;
 }
 
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
-}
-
-.aspect-\[2\/1\] {
-  aspect-ratio: 2/1;
+.w-3\/5 {
+  width: 60%;
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-4 {
@@ -665,24 +678,16 @@ video {
 
 /* Overall Styling */
 
-html, body {
-  height: 100%;
+html {
   color: #551f00;
+  background: url(../images/crafting_icons.gif) repeat 0 0;
+  font-size: 18px;
 }
 
 /* Homepage Styles */
 
-.main-page {
-  background: url(../images/crafting_icons.gif) repeat 0 0;
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-}
-
 .content-wrapper {
   background-color: #fee7b3;
-  font-size: 18px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:

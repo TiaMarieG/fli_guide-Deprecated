@@ -4,29 +4,20 @@
 
 /* Overall Styling */
 
-html, body {
-    height: 100%;
+html {
     color: #551f00;
+    background: url(../images/crafting_icons.gif) repeat 0 0;
+    font-size: 18px;
 }
 
 /* Homepage Styles */
 
-.main-page {
-    background: url(../images/crafting_icons.gif) repeat 0 0;
-    display: flex;
-    flex-direction: column;
-
-    width: 60%;
-    margin: auto;
-}
 
 .content-wrapper {
     background-color: #fee7b3;
-    font-size: 18px;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-
     grid-template-areas:
         "header header"
         "main   sidebar"
