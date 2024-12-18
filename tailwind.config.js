@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       colors: {
         'pancho': '#edccab',
-        'cape-palliser': '#a67647'
+        'cape-palliser': '#a67647',
+        'cape-honey': '#fee7b3'
       }
     },
   },

@@ -12,10 +12,7 @@ html {
 
 /* Homepage Styles */
 
-
 .content-wrapper {
-    background-color: #fee7b3;
-
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
@@ -32,96 +29,9 @@ header {
     grid-area: header;
 }
 
-header h1 {
-    margin-top: .75rem;
-    margin-bottom: 0;
-    margin-left: 1.5rem;
-}
-
 /* Main Styles */
 main {
     grid-area: main;
-}
-
-.profession-div {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Combat Profession Styles */
-
-#combat-professions h2 {
-    margin-top: 0;
-}
-
-#combat-professions nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#combat-professions a {
-    display: flex;
-    align-items: center;
-}
-
-#combat-professions img {
-    padding-right: .25rem;
-}
-
-/* Gathering Profession Styles */
-
-#gathering-professions nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#gathering-professions a {
-    display: flex;
-    align-items: center;
-}
-
-#gathering-professions img {
-    padding-right: .25rem;
-}
-
-/* Crafting Profession Styles */
-
-#craft-nav-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#craft-nav-div nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    height: 100px;
-    column-gap: 5rem;
-    row-gap: 1rem;
-}
-
-#crafting-professions a {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-#crafting-professions img {
-    padding-right: .25rem;
 }
 
 /* Link Styles */
@@ -140,8 +50,6 @@ h2 {
 
     padding: .25rem;
     border-radius: .5rem;
-    margin-left: 1.5rem;
-    margin-right: 1rem;
 }
 
 /* Aside Styles */

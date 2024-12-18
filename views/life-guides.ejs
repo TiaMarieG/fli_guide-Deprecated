@@ -11,101 +11,212 @@
     <link rel="icon" type="image" href="images/bone_dragon.jpg" alt="Fantasy Life i Logo and Scenery Art">
 </head>
 
-<body class="main-page">
+<body class="m-auto min-h-screen flex flex-col justify-between w-3/6 bg-[#fee7b3]">
     <div class="content-wrapper">
         <header>
-            <h1>What life will you choose?</h1>
+            <img src="../images/life-ui.jpg" alt="Fantasy Life i Life UI" class="aspect-[3/1]">
+
+            <h1 class="text-3xl ml-4 mt-4">What kind of life will you live?</h1>
         </header>
 
-        <main>
-            <div id="combat-professions" class="profession-div">
-                <h2>Combat</h2>
-                <nav>
-                    <a href="/hunter-guide">
-                        <img height="40" src="images/class-icons/hunt_icon.png" width="40">
-                        Hunter
-                    </a>
-                    <a href="/magician-guide">
-                        <img height="40" src="images/class-icons/magic_icon.png" width="40">
-                        Magician
-                    </a>
-                    <a href="/mercenary-guide">
-                        <img height="40" src="images/class-icons/merc_icon.png" width="40">
-                        Mercenary
-                    </a>
-                    <a href="/paladin-guide">
-                        <img height="40" src="images/class-icons/pal_icon.png" width="40">
-                        Paladin
-                    </a>
+        <main class="ml-4">
+            <div>
+                <h2
+                    class="text-xl font-semibold bg-[#edccab] border-solid border-2 rounded-md text-center border-[#a67647]">
+                    Combat</h2>
+                <nav class="grid grid-cols-4 gap-4 my-4 ">
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/hunter-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/hunt_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Hunter
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/magician-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/magic_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Magician
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/mercenary-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/merc_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Mercenary
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/paladin-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/pal_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Paladin
+                            </div>
+                        </a>
+                    </div>
                 </nav>
             </div>
 
-            <div id="gathering-professions" class="profession-div">
-                <h2>Gathering</h2>
-                <nav>
-                    <a href="/angler-guide">
-                        <img height="40" src="images/class-icons/ang_icon.png" width="40">
-                        Angler
-                    </a>
-                    <a href="/farmer-guide">
-                        <img height="40" src="images/class-icons/farm_icon.png" width="40">
-                        Farmer
-                    </a>
-                    <a href="/miner-guide">
-                        <img height="40" src="images/class-icons/miner_icon.png" width="40">
-                        Miner
-                    </a>
-                    <a href="/woodcutter-guide">
-                        <img height="40" src="images/class-icons/wood_icon.png" width="40">
-                        Woodcutter
-                    </a>
+            <div>
+                <h2
+                    class="text-xl font-semibold bg-[#edccab] border-solid border-2 rounded-md text-center border-[#a67647]">
+                    Gathering</h2>
+                <nav class="grid grid-cols-4 gap-4 my-4 ">
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/angler-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/ang_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Angler
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/farmer-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/farm_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Farmer
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/miner-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/miner_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Miner
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/woodcutter-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/wood_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Woodcutter
+                            </div>
+                        </a>
+                    </div>
                 </nav>
             </div>
 
-            <div id="crafting-professions" class="profession-div">
-                <h2>Crafting</h2>
-                <div id="craft-nav-div">
-                    <nav>
-                        <div class="craft-class">
-                            <a href="/alchemist-guide">
-                                <img height="40" src="images/class-icons/alch_icon.png" width="40">
+            <div>
+                <h2
+                    class="text-xl font-semibold bg-[#edccab] border-solid border-2 rounded-md text-center border-[#a67647]">
+                    Crafting</h2>
+
+                <nav class="grid grid-cols-3 gap-4 mt-4">
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/alchemist-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/alch_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
                                 Alchemist
-                            </a>
-                        </div>
-                        <div class="craft-class">
-                            <a href="/artist-guide">
-                                <img height="40" src="images/class-icons/art_icon.png" width="40">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/artist-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/art_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
                                 Artist
-                            </a>
-                        </div>
-                        <div class="craft-class">
-                            <a href="/blacksmith-guide">
-                                <img height="40" src="images/class-icons/smith_icon.png" width="40">
-                                Blacksmith - Tia
-                            </a>
-                        </div>
-                        <div class="craft-class">
-                            <a href="/carpenter-guide">
-                                <img height="40" src="images/class-icons/carp_icon.png" width="40">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/blacksmith-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/smith_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
+                                Blacksmith
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/carpenter-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/carp_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
                                 Carpenter
-                            </a>
-                        </div>
-                        <div class="craft-class">
-                            <a href="/cook-guide">
-                                <img height="40" src="images/class-icons/cook_icon.png" width="40">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/cook-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/cook_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
                                 Cook
-                            </a>
-                        </div>
-                        <div class="craft-class">
-                            <a href="/tailor-guide">
-                                <img height="40" src="images/class-icons/sew_icon.png" width="40">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-[#edccab] rounded-md m-auto">
+                        <a href="/tailor-guide">
+                            <div class="mx-4 mt-3">
+                                <img src="images/class-icons/sew_icon.png">
+                            </div>
+                            <div class="text-center font-medium my-2">
                                 Tailor
-                            </a>
-                        </div>
-                    </nav>
-                </div>
+                            </div>
+                        </a>
+                    </div>
+                </nav>
             </div>
         </main>
+        <aside class="bg-[#edccab] mr-4 border-solid border-2 rounded-md text-center border-[#a67647] h-fit">
+            <h3 class="text-2xl font-bold underline mb-2">Site Navigation</h3>
+            <div>
+                <nav class="mb-2">
+                    <ul>
+                        <li><a href="/">
+                                Home Page</a></li>
+                        <li><a href="">Game Breakdown</a>
+                        </li>
+                        <li><a href="/world-of-fli">World of Ginormosia</a></li>
+                        <li><a href="/quest-guide">Main & Side Quests</a></li>
+                        <li><a href="">DLC</a>
+                        </li>
+                        <li><a href="">Database</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
     </div>
 
     <footer>

@@ -563,9 +563,19 @@ video {
   margin-right: 0.75rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-2 {
@@ -584,6 +594,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -600,6 +614,10 @@ video {
   aspect-ratio: 4/3;
 }
 
+.aspect-\[5\/2\] {
+  aspect-ratio: 5/2;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -609,12 +627,16 @@ video {
   min-height: 100vh;
 }
 
-.w-3\/5 {
-  width: 60%;
+.w-3\/6 {
+  width: 50%;
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -655,6 +677,11 @@ video {
   background-color: rgb(237 204 171 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#fee7b3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 231 179 / var(--tw-bg-opacity, 1));
+}
+
 .text-center {
   text-align: center;
 }
@@ -664,12 +691,26 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .underline {
@@ -687,7 +728,6 @@ html {
 /* Homepage Styles */
 
 .content-wrapper {
-  background-color: #fee7b3;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
@@ -703,94 +743,10 @@ header {
   grid-area: header;
 }
 
-header h1 {
-  margin-top: .75rem;
-  margin-bottom: 0;
-  margin-left: 1.5rem;
-}
-
 /* Main Styles */
 
 main {
   grid-area: main;
-}
-
-.profession-div {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Combat Profession Styles */
-
-#combat-professions h2 {
-  margin-top: 0;
-}
-
-#combat-professions nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#combat-professions a {
-  display: flex;
-  align-items: center;
-}
-
-#combat-professions img {
-  padding-right: .25rem;
-}
-
-/* Gathering Profession Styles */
-
-#gathering-professions nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#gathering-professions a {
-  display: flex;
-  align-items: center;
-}
-
-#gathering-professions img {
-  padding-right: .25rem;
-}
-
-/* Crafting Profession Styles */
-
-#craft-nav-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#craft-nav-div nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 100px;
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
-  row-gap: 1rem;
-}
-
-#crafting-professions a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-#crafting-professions img {
-  padding-right: .25rem;
 }
 
 /* Link Styles */
@@ -807,8 +763,6 @@ h2 {
   border: solid 3px #948163;
   padding: .25rem;
   border-radius: .5rem;
-  margin-left: 1.5rem;
-  margin-right: 1rem;
 }
 
 /* Aside Styles */
