@@ -7,7 +7,7 @@
 html {
     color: #551f00;
     background: url(../images/crafting_icons.gif) repeat 0 0;
-    font-size: 18px;
+    font-family: "Candal", sans-serif;
 }
 
 /* Homepage Styles */
@@ -40,18 +40,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Text Styles */
-
-h2 {
-    background-color: #eecea8;
-    text-align: center;
-
-    border: solid 3px #948163;
-
-    padding: .25rem;
-    border-radius: .5rem;
-}
-
 /* Aside Styles */
 
 aside {
@@ -62,6 +50,7 @@ aside {
 
 footer {
     grid-area: footer;
+    font-size: small;
 
     background-color: #edccab;
     margin-top: auto;
