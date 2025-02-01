@@ -11,10 +11,10 @@ const PORT = 3000;
 
 // Give information to connect to mariadb
 const pool = mariadb.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: 'Izzaia8192',
-    database: 'fli_guide'
+    host: 
+    user: 
+    password: 
+    database: 
 });
 
 // Function that connects to mariadb
