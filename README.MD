@@ -1,3 +1,5 @@
+Disclaimer - This file is listed as deprecated because I am working on a new and improved version that I am not ready to share with the public yet.
+
 # FLi Guide - An online helper tool for the upcoming game Fantasy Life i: The Girl Who Steals 
 
  **Originally created by - Tia Marie Gordon**
